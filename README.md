@@ -103,6 +103,7 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 
 # Tiempos de respuesta : 
+
     * 1000000 : 23.68s
     * 1010000 : 24.39s 
     * 1020000 : 25.13s
@@ -113,5 +114,9 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
     * 1070000 : 27.90s
     * 1080000 : 28.41s
     * 1090000 : 28.90s
+
+*CPU usage during the requests :*
+
+![](images/respuestas/CPU_usage.png)
 
 
