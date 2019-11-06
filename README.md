@@ -102,4 +102,16 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 
 
+# Tiempos de respuesta : 
+    * 1000000 : 23.68s
+    * 1010000 : 24.39s 
+    * 1020000 : 25.13s
+    * 1030000 : 25.54s
+    * 1040000 : 26.11s
+    * 1050000 : 26.75s
+    * 1060000 : 27.02s
+    * 1070000 : 27.90s
+    * 1080000 : 28.41s
+    * 1090000 : 28.90s
+
 
