@@ -101,22 +101,46 @@ Cuando un conjunto de usuarios consulta un enésimo número (superior a 1000000)
 
 
 
+### 1)
 
-# Tiempos de respuesta : 
+Azure creates 3 resources in parallel of the VM : 
 
-    * 1000000 : 23.68s
-    * 1010000 : 24.39s 
-    * 1020000 : 25.13s
-    * 1030000 : 25.54s
-    * 1040000 : 26.11s
-    * 1050000 : 26.75s
-    * 1060000 : 27.02s
-    * 1070000 : 27.90s
-    * 1080000 : 28.41s
-    * 1090000 : 28.90s
+![](images/respuestas/resources.png)
 
-*CPU usage during the requests :*
+### 2)
+
+The resource postman-ip manages the public ip adress of the VM
+
+The resource postman-nsg manages security groups of the VM
+
+The resource postman96 managaes network interfaces of the VM
+
+### 3)
+
+When we close the ssh connection, the application we launched stops because it is a process which was started in the terminal
+
+We have to open the port so that our application is accessible from other users through internet.
+
+### 4)
+
+* 1000000 : 23.68s
+* 1010000 : 24.39s 
+* 1020000 : 25.13s
+* 1030000 : 25.54s
+* 1040000 : 26.11s
+* 1050000 : 26.75s
+* 1060000 : 27.02s
+* 1070000 : 27.90s
+* 1080000 : 28.41s
+* 1090000 : 28.90s
+
+
+
+### 5) CPU usage during the requests
 
 ![](images/respuestas/CPU_usage.png)
 
 
+This function consumes a lot of CPU because our VM is using a CPU with low specs
+
+### 6) 
